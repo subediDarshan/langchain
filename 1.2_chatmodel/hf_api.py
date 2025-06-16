@@ -8,8 +8,15 @@ llm = HuggingFaceEndpoint(
     task="text-generation"
 )
 
+
 model = ChatHuggingFace(llm=llm)
 
-result = model.invoke("What is the capital of India")
+result = llm.invoke("What is the capital of India")
 
-print(result.content)
+print(result)
+
+# llm = HuggingFaceEndpoint(
+#     repo_id="HuggingFaceH4/zephyr-7b-beta",
+#     task="text-generation",
+    
+# )

@@ -21,6 +21,12 @@ doc_embeddings = embedding.embed_documents(documents)
 query_embedding = embedding.embed_query(query)
 
 scores = cosine_similarity([query_embedding], doc_embeddings)[0]
+print(scores)
+# [0.37574341 0.37946316 0.36264173 0.37905126 0.56206369]
+print(list(enumerate(scores)))
+# [(0, np.float64(0.37574340881227475)), (1, np.float64(0.379463159564959)), (2, np.float64(0.3626417258509522)), (3, np.float64(0.37905125800258427)), (4, np.float64(0.5620636859095273))]
+print(sorted(list(enumerate(scores)),key=lambda x:x[1]))
+# [(2, np.float64(0.3626417258509522)), (0, np.float64(0.37574340881227475)), (3, np.float64(0.37905125800258427)), (1, np.float64(0.379463159564959)), (4, np.float64(0.5620636859095273))]
 
 index, score = sorted(list(enumerate(scores)),key=lambda x:x[1])[-1]
 
