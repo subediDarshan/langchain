@@ -2,6 +2,14 @@
 langchain
 langchain-core
 
+# Langchain Community (for document loaders) 
+langchain-community
+pypdf
+
+# for web loader
+beautifulsoup4
+
+
 # OpenAI Integration
 langchain-openai
 openai
