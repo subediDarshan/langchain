@@ -11,6 +11,7 @@ beautifulsoup4
 
 langchain-experimental
 
+langchain-chroma
 
 # OpenAI Integration
 langchain-openai
