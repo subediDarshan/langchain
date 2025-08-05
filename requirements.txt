@@ -9,6 +9,8 @@ pypdf
 # for web loader
 beautifulsoup4
 
+langchain-experimental
+
 
 # OpenAI Integration
 langchain-openai
