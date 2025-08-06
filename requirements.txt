@@ -38,3 +38,5 @@ scikit-learn
 
 # Data validation
 pydantic
+
+wikipedia
